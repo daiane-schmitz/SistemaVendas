@@ -21,7 +21,7 @@ public class CupomFiscalCadastro {
 				
 				//Cenário
 				CupomFiscalService service = ServiceFactory.createCupomFiscalService();
-				
+				Date data = new Date();
 
 				Loja loja1 = new Loja(1, "Americanas");
 				Loja loja2 = new Loja(2, "Dell");
@@ -44,11 +44,11 @@ public class CupomFiscalCadastro {
 				Vendedor vendedor5 = new Vendedor(5, "789", "Alexandre Lentilha");
 
 				
-				CupomFiscal cupomFiscal1 = new CupomFiscal(1, 800.0, new Date(), loja1, cliente1, vendedor1);
-				CupomFiscal cupomFiscal2 = new CupomFiscal(2, 2400.0, new Date(), loja2, cliente2, vendedor2);
-				CupomFiscal cupomFiscal3 = new CupomFiscal(3, 1600.0, new Date(), loja3, cliente3, vendedor3);
-				CupomFiscal cupomFiscal4 = new CupomFiscal(4, 1200.0, new Date(), loja4, cliente4, vendedor4);
-				CupomFiscal cupomFiscal5 = new CupomFiscal(5, 600.0, new Date(), loja5, cliente5, vendedor5);
+				CupomFiscal cupomFiscal1 = new CupomFiscal(1, 800.0, data, loja1, cliente1, vendedor1);
+				CupomFiscal cupomFiscal2 = new CupomFiscal(2, 2400.0, data, loja2, cliente2, vendedor2);
+				CupomFiscal cupomFiscal3 = new CupomFiscal(3, 1600.0, data, loja3, cliente3, vendedor3);
+				CupomFiscal cupomFiscal4 = new CupomFiscal(4, 1200.0, data, loja4, cliente4, vendedor4);
+				CupomFiscal cupomFiscal5 = new CupomFiscal(5, 600.0, data, loja5, cliente5, vendedor5);
 				
 				service.cadastrarCupomFiscal(cupomFiscal1);
 				service.cadastrarCupomFiscal(cupomFiscal2);
