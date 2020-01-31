@@ -11,13 +11,12 @@ import br.com.gx2.service.ServiceFactory;
 
 public class ProdutosCadastro {
 	
+		ProdutoService service = ServiceFactory.createProdutoService();
+	
 			@Test
 			
 			public void setUp() {
-				
-				//Cenário
-				
-				ProdutoService service = ServiceFactory.createProdutoService();
+						
 				
 				Grupo grupo1 = new Grupo(1, "Celulares");
 				Grupo grupo2 = new Grupo(2, "Computadores");

@@ -11,7 +11,6 @@ import br.com.gx2.service.ServiceFactory;
 
 class GrupoPesquisa {
 
-
 		GrupoService service = ServiceFactory.createGrupoService();
 		
 		@Test

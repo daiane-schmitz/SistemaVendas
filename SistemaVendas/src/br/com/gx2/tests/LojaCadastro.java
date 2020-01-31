@@ -10,14 +10,12 @@ import br.com.gx2.service.ServiceFactory;
 
 public class LojaCadastro {
 
+	LojaService service = ServiceFactory.createLojaService();
 	
 			@Test
 			
 			public void setUp() {
-				
-				//Cenário
-				LojaService service = ServiceFactory.createLojaService();
-				
+
 				Loja loja1 = new Loja(1, "Americanas");
 				Loja loja2 = new Loja(2, "Dell");
 				Loja loja3 = new Loja(3, "Apple");

@@ -4,18 +4,18 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-import br.com.gx2.service.ClienteService;
+import br.com.gx2.service.LojaService;
 import br.com.gx2.service.ServiceFactory;
 
-class ClienteDeletar {
+class LojaDeletar {
 
 	@Test
 	void test() {
-		ClienteService service = ServiceFactory.createClienteService();
+		LojaService service = ServiceFactory.createLojaService();
 			
-		service.apagarCliente(5);
+		service.apagarLoja(5);
 		
-		assertTrue(service.apagarCliente(5));
+		assertTrue(service.apagarLoja(5));
 	}
 	
 

@@ -10,10 +10,10 @@ import br.com.gx2.service.ServiceFactory;
 
 class ClienteAlterar {
 
+	ClienteService service = ServiceFactory.createClienteService();
+
 	@Test
 	void test() {
-
-		ClienteService service = ServiceFactory.createClienteService();
 
 		
 		Cliente cliente1 = new Cliente(1, "Alice Rita Gomes", "45958384090");
