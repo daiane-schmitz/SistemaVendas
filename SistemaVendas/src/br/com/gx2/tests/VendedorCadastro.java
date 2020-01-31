@@ -1,5 +1,7 @@
 package br.com.gx2.tests;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.Test;
 
 import br.com.gx2.entity.Vendedor;
@@ -28,7 +30,18 @@ public class VendedorCadastro {
 				service.cadastrarVendedor(vendedor3);
 				service.cadastrarVendedor(vendedor4);
 				service.cadastrarVendedor(vendedor5);
-				
+			
+				boolean cadastrarVendedor1 = service.cadastrarVendedor(vendedor1);
+				assertTrue(cadastrarVendedor1);
+				boolean cadastrarVendedor2 = service.cadastrarVendedor(vendedor2);
+				assertTrue(cadastrarVendedor2);
+				boolean cadastrarVendedor3 = service.cadastrarVendedor(vendedor3);
+				assertTrue(cadastrarVendedor3);
+				boolean cadastrarVendedor4 = service.cadastrarVendedor(vendedor4);
+				assertTrue(cadastrarVendedor4);
+				boolean cadastrarVendedor5 = service.cadastrarVendedor(vendedor5);
+				assertTrue(cadastrarVendedor5);
+			
 			}
 			
 			

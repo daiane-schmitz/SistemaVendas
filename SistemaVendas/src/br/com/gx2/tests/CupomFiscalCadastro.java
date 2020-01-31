@@ -56,6 +56,9 @@ public class CupomFiscalCadastro {
 				service.cadastrarCupomFiscal(cupomFiscal4);
 				service.cadastrarCupomFiscal(cupomFiscal5);
 				
+				
+	
+				
 			}
 			
 	}

@@ -5,19 +5,20 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-import br.com.gx2.entity.Vendedor;
 import br.com.gx2.service.ServiceFactory;
 import br.com.gx2.service.VendedorService;
 
-class VendedorPesquisa {
+class VendedorListar {
+
+	VendedorService service = ServiceFactory.createVendedorService();
 
 	@Test
-	private void test() {
-		VendedorService service = ServiceFactory.createVendedorService();
+	void test() {
 
-		Vendedor vendedor = service.pesquisarVendedorId(1);
+	service.exibirTodosVendedores();
 		
-		assertThat(vendedor.getCodigoVendedor(), is (1));
+	assertThat(service.exibirTodosVendedores().size(), is (5));
+	
 	}
 
 

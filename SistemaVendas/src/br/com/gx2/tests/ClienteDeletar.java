@@ -12,10 +12,10 @@ class ClienteDeletar {
 	@Test
 	void test() {
 		ClienteService service = ServiceFactory.createClienteService();
+			
+		service.apagarCliente(1);
 		
-//	Boolean retorno = service.apagarCliente(3);
-	
-	assertTrue(service.apagarCliente(1));
+		assertTrue(service.apagarCliente(1));
 	}
 	
 

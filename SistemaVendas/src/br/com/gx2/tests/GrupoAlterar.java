@@ -15,10 +15,8 @@ public class GrupoAlterar {
 	
 			//Cenário
 			GrupoService service = ServiceFactory.createGrupoService();
-
 			
 			Grupo grupo1 = new Grupo(1, "Celulares");
-			
 			
 			service.alterarGrupo(grupo1);
 			

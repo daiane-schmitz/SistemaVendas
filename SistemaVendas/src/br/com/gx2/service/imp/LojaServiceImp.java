@@ -39,7 +39,7 @@ public class LojaServiceImp implements LojaService{
 
 			LojaDAO dao = DAOFactory.createLojaDAO();
 			dao.deleteById(obj);
-			retorno = true;	
+			retorno = true;
 		}
 
 		return retorno;
@@ -56,7 +56,7 @@ public class LojaServiceImp implements LojaService{
 		return Loja;
 	}
 
-	public List<Loja> exibirTodosLojas() {
+	public List<Loja> exibirTodasLojas() {
 
 		List<Loja> Lojas = new ArrayList<Loja>();
 		
@@ -64,12 +64,6 @@ public class LojaServiceImp implements LojaService{
 		Lojas = dao.findAll();
 
 		return Lojas;
-	}
-
-	@Override
-	public List<Loja> exibirTodasLojas() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }

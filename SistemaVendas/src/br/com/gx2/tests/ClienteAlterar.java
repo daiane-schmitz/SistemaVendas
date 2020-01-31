@@ -1,6 +1,6 @@
 package br.com.gx2.tests;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
@@ -21,7 +21,7 @@ class ClienteAlterar {
 		service.alterarCliente(cliente1);
 		
 		assertTrue(service.alterarCliente(cliente1));
-		
+	
 	}
 
 }

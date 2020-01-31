@@ -5,21 +5,19 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-import br.com.gx2.service.GrupoService;
+import br.com.gx2.service.LojaService;
 import br.com.gx2.service.ServiceFactory;
 
-class GruposListar {
+class LojaListar {
 
-
-		GrupoService service = ServiceFactory.createGrupoService();
+	LojaService service = ServiceFactory.createLojaService();
 
 		@Test
 		void test() {
-	
-		service.exibirTodosGrupos();
-			
-		assertThat(service.exibirTodosGrupos().size(), is (5));
-		
-		}
+
+		service.exibirTodasLojas();
+
+		assertThat(service.exibirTodasLojas().size(), is(5));
+	}
 
 }
